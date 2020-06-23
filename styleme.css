@@ -1,7 +1,11 @@
 a:any-link{
     color: red;
     font-variant: all-small-caps;
+    text-decoration: none;
 }
+
+a:hover { color: #FF00FF; text-decoration: underline }
+
 h1 {
     color: cornflowerblue;
     font-size: 50px;
@@ -13,6 +17,7 @@ body {
 
 p {
     color: aliceblue;
+
 }
 
 strong {
@@ -30,7 +35,7 @@ ul{
 ol{
     color: aliceblue;
 }
-img {
+.image {
     width: 240px;
     height: 240px
 
