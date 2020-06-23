@@ -1,0 +1,37 @@
+a:any-link{
+    color: red;
+    font-variant: all-small-caps;
+}
+h1 {
+    color: cornflowerblue;
+    font-size: 50px;
+}
+
+body {
+    background-color: #33312F;
+}
+
+p {
+    color: aliceblue;
+}
+
+strong {
+    color: yellow;
+    font-weight: bold;
+    }
+
+h2 {
+    color: cornflowerblue;
+   }
+
+ul{
+    color: aliceblue;
+}
+ol{
+    color: aliceblue;
+}
+img {
+    width: 240px;
+    height: 240px
+
+}
