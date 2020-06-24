@@ -19,6 +19,8 @@ h1 {
 
 body{
     background-color: white;
+    background-image: url("img/silverware.jpg");
+    background-attachment: fixed;
     text-decoration-color: #404040;
     font-size: 11pt;
     font-family: Georgia,Garamond;
