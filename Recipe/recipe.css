@@ -1,0 +1,38 @@
+.mainheading {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode",Helvetica,Arial ;
+    text-align: center;
+    font-size: 22pt;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode",Helvetica,Arial ;
+    text-align:left;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+body{
+    background-color: white;
+    text-decoration-color: #404040;
+    font-size: 11pt;
+    font-family: Georgia,Garamond;
+}
+
+a:any-link{
+    color: #A4A400;
+}
+
+blockquote{
+    background-color: #FFFFA8 ;
+    font-style: italic;
+}
+
+pre{
+    text-align:right;
+}
