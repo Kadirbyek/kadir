@@ -1,3 +1,6 @@
+body {
+    background-color: #33312F;
+}
 a:any-link{
     color: red;
     font-variant: all-small-caps;
@@ -9,10 +12,6 @@ a:hover { color: #FF00FF; text-decoration: underline }
 h1 {
     color: cornflowerblue;
     font-size: 50px;
-}
-
-body {
-    background-color: #33312F;
 }
 
 p {
