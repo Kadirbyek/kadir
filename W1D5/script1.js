@@ -20,12 +20,7 @@ function isVowel(char)
 function sum(intList) {
 return intList.reduce(function (a,b) {
         return a+b;
-})
-//     let s=0;
-//     for(let i=0;i<intList.length;i++){
-//         s+=intList[i];
-//     }
-//     return s;
+    })
 }
 
 function multiply(intList){
