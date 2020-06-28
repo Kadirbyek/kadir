@@ -1,6 +1,21 @@
 function myFunctionTest ( expected, fn){
-if (expected==fn) return "TEST SUCCEEDED"
-    else return "TEST FAILED"
+if (expected==fn) return "TEST SUCCEEDED" +fn
+    else return "TEST FAILED" +fn
+}
+
+function shortest(wordList){
+
+    let len=wordList[0].length;
+    let shortWord="ksakdsaldknasl";
+
+    for(let i=1; i<wordList.length;i++){
+        if (wordList[i].length < len) {
+            len=wordList[i].length;
+            shortWord = wordList[i];
+        }
+    }
+    return shortWord;
+
 }
 
 function max(a,b){
