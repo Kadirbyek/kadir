@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Form Password Complexity Check</title>
-    <script src="webform1.js"></script>
 </head>
 <body>
 <fieldset>
@@ -11,13 +10,13 @@
 <form name="form1" action="#">
 <h2>URL Address</h2>
 
-<input id="url"  type="text"  style="color: #999999"> <br/> <br/>
+<input id="url"  type="text"  style="color: #999999" pattern="https?://.+"> <br/> <br/>
 <h2>Email Address</h2>
 <input type="text" value="Enter email" style="color: #999999"> <br/>
 <label style="color: #999999">we'll never share your email address</label>
 <h2>Password</h2>
-<input name='pass' type="text"  style="color: #999999" > <br/><br/>
-<button type="submit" onclick="CheckPassword(document.form1.pass)">Submit</button>
+<input pattern="/^(?=.*[A-Z])(?=.*[0-9])\w{10,}$/" name='pass' type="text"  style="color: #999999"  > <br/><br/>
+<button type="submit">Submit</button>
 </form>
 
 </fieldset>
