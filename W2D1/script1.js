@@ -11,12 +11,6 @@ function multiply(intList){
     return intList.reduce((a,b) => a*b)
 }
 function reverse(str){
-    // let reversed = "";
-    // for(let c of str){
-    //     reversed = c + reversed;
-    // }
-    // return reversed;
-
     let rev = str.split("").reduce((a,b) => b+a);
     return rev;
 }
