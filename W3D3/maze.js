@@ -3,32 +3,31 @@ $(document).ready(function () {
 
     let status = null;
     // let $boundary = $('.boundary');  .boundary is a class
+
+
     $("div.boundary").mouseover(function () {
         // alert('You just moved your mouse over the #someId element!');
         $("div.boundary").css("background-color","red");
         lost();
     });
 
-    $('#end').mousover(function () {
-        // if (status === 'start') {
-        $('#status').text(' you win. :[');
-        // status='end';
-        // }
+    $('#end').mouseover(function () {
+        if (status === 'start') {
+            $('#status').text(' you win. :[');
+            status='end';
+        }
     });
 
     $('#start').click(function(){
-        $(".boundary").trigger('mouseover');
+        // $(".boundary").trigger('mouseover');
         reset();
     });
 
-    // $("#start").mousover(function () {
-    //             status='start';
-    //      });
 
     function reset(){
         status = 'start';
         $('#status').text('Click the "S" to begin.')
-        $(".boundary").removeClass('youlose');
+        $('.boundary').removeClass('div.boundary');
     }
 
     function lost(){
