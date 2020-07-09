@@ -1,39 +1,38 @@
-$(document).ready(function () {
-    "use strict"
+"use strict";
 
-    let status = null;
-    // let $boundary = $('.boundary');  .boundary is a class
+$(document).ready(function(){
+    var start =  $("#start");
+    var end = $("#end");
+    var maze = $("#maze");
+    var boundary = $(".boundary");
+    var gameStart = false;
+    maze.mouseleave(function(){ loss() });
 
-
-    $("div.boundary").mouseover(function () {
-        // alert('You just moved your mouse over the #someId element!');
-        $("div.boundary").css("background-color","red");
-        lost();
-    });
-
-    $('#end').mouseover(function () {
-        if (status === 'start') {
-            $('#status').text(' you win. :[');
-            status='end';
+    start.click(function(){
+        $("#status").text('Move mouse to End in order to win the game');
+        gameStart = true;
+        if(boundary.hasClass('youlose')){
+            boundary.removeClass('youlose');
         }
+        boundary.mousemove(function(){ loss(); })
     });
 
-    $('#start').click(function(){
-        // $(".boundary").trigger('mouseover');
-        reset();
+    end.mousemove(function(){
+        if(gameStart == true) {
+            alert("You won!");
+            gameStart = false;
+            $("#status").text("You won the game! Congratulation!");
+        } else if(gameStart && boundary.hasClass('youlose'))  loss();
+
     });
 
-
-    function reset(){
-        status = 'start';
-        $('#status').text('Click the "S" to begin.')
-        $('.boundary').removeClass('div.boundary');
+    function loss(){
+        if(gameStart){
+            gameStart = false;
+            boundary.addClass('youlose');
+            $("#status").text('You lose the game');
+        }
     }
 
-    function lost(){
-        $('#status').text('Sorry, you lost. :[');
-        $('.boundary').addClass('youlose');
-        status = 'lost';
-    };
 
-});
+})
